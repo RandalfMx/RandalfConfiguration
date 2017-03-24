@@ -216,20 +216,20 @@ public class Configuration {
 				}
 			}
 		} catch (NumberFormatException e) {
-			log.error(e);
+			log.error(e.getMessage(),e);
 			throw new ConfigurationException(e.getMessage(), e);
 		} catch (FileNotFoundException e) {
-			log.error(e);
+			log.error(e.getMessage(),e);
 			throw new ConfigurationException(e.getMessage(), e);
 		} catch (IOException e) {
-			log.error(e);
+			log.error(e.getMessage(),e);
 			throw new ConfigurationException(e.getMessage(), e);
 		} finally {
 			try {
 				if (fis != null)
 					fis.close();
 			} catch (IOException e) {
-				log.error(e);
+				log.error(e.getMessage(),e);
 				throw new ConfigurationException(e.getMessage(), e);
 			}
 		}
