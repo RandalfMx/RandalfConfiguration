@@ -3,18 +3,20 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>mx.randalf.configuration</groupId>
 	<artifactId>RandalfConfiguration</artifactId>
-	<version>3.0.1</version>
+	<version>3.0.2</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.9</maven.compiler.source>
 		<maven.compiler.target>1.9</maven.compiler.target>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>xml-apis</groupId>
-			<artifactId>xml-apis</artifactId>
-			<version>1.4.01</version>
-		</dependency>
+	  <!-- 
+    <dependency>
+      <groupId>xml-apis</groupId>
+      <artifactId>xml-apis</artifactId>
+      <version>1.4.01</version>
+    </dependency>
+	   -->
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
